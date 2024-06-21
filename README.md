@@ -16,5 +16,5 @@
 
 - Head over to api/api/settings.py
 - In the settings.py file locate the ```SOCIAL_AUTH_GOOGLE_OAUTH2_KEY``` and ```SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET``` variables
-- Head over to [https://console.cloud.google.com](Google API) to get your secret keys
+- Head over to [Google API](https://console.cloud.google.com) to get your secret keys
 - Replace your keys with that in the variables
