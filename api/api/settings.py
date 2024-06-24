@@ -117,6 +117,7 @@ REST_FRAMEWORK = {
 
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.apple.AppleIdAuth',
    'drf_social_oauth2.backends.DjangoOAuth2',
    'django.contrib.auth.backends.ModelBackend',
 )
@@ -130,6 +131,17 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = [
     'https://www.googleapis.com/auth/userinfo.email',
     'https://www.googleapis.com/auth/userinfo.profile',
 ]
+
+# Apple configuration
+SOCIAL_AUTH_APPLE_ID_CLIENT = '<>'
+SOCIAL_AUTH_APPLE_ID_TEAM = '<>'
+SOCIAL_AUTH_APPLE_ID_KEY = '<>'
+SOCIAL_AUTH_APPLE_ID_SECRET = """
+-----BEGIN PRIVATE KEY-----
+MIGTAgE.....
+-----END PRIVATE KEY-----"""
+SOCIAL_AUTH_APPLE_ID_SCOPE = ['email', 'name']
+# SOCIAL_AUTH_APPLE_ID_EMAIL_AS_USERNAME = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
