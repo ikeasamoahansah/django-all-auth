@@ -9,6 +9,6 @@ class HomeView(generics.ListAPIView):
     authentication_classes = (IsAuthenticated,)
     def get(self, request, *args, **kwargs):
         response = {
-            'message': 'token works.'
+            'message': 'AUTHENTICATED!'
         }
         return Response(response, status=200)
