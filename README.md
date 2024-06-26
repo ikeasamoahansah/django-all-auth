@@ -1,6 +1,6 @@
-# Django Social OUATH Integration Backend
+## Django Social OUATH Integration Backend
 
-### Setup
+#### Setup
 
 - set up a virtual environment
     ```
@@ -12,7 +12,7 @@
     ```
 
 
-### Oauth Google Setup
+#### Oauth Google Setup
 
 - Head over to api/api/settings.py
 - In the settings.py file locate the ```SOCIAL_AUTH_GOOGLE_OAUTH2_KEY``` and ```SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET``` variables
@@ -20,7 +20,17 @@
 - Replace your keys with that in the variables
 
 
-### Oauth for AppleID
+#### Oauth for AppleID
 
 - Head over to [Apple for Developers](https://developer.apple.com) to get your keys
 - Replace your keys with that in the variables
+
+#### Running the API
+- Migrate changes
+```
+python api/manage.py migrate
+```
+- Run the server
+```
+python api/manage.py runserver
+```
