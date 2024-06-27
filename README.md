@@ -26,6 +26,10 @@
 - Replace your keys with that in the variables
 
 #### Running the API
+- Use the virtual environment
+```
+source .venv/bin/activate
+```
 - Migrate changes
 ```
 python api/manage.py migrate
